@@ -1,0 +1,5 @@
+import { PageHero } from '@/components/ui/PageHero';
+import { HeroImagePanel } from '@/components/ui/HeroImagePanel';
+import { images } from '@/lib/site';
+const points=[['01','Inspection','Paint condition is reviewed panel by panel before polishing.'],['02','Measured passes','Correction is controlled, not aggressive.'],['03','Refinement','Final polishing improves depth, clarity and gloss.'],['04','Protection ready','The surface is prepared for wax, sealant or ceramic coating.']];
+export default function Page(){return <><PageHero kicker="Paint Correction" title="Restore depth. Reveal clarity." copy="Correction-focused polishing to reduce swirls, haze and dull reflections before protection." action={{href:'/contact',label:'Start Enquiry'}} bg={images.correction}/> <HeroImagePanel src={images.correction} alt="Black car with reflections"/><section className="section"><div className="container process-grid">{points.map(p=><div className="process-card" key={p[0]}><span>{p[0]}</span><h3>{p[1]}</h3><p>{p[2]}</p></div>)}</div></section></>}

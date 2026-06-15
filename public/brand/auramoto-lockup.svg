@@ -1,0 +1,19 @@
+<svg width="620" height="132" viewBox="0 0 620 132" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AuraMoto Detailing Studio">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="125" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#fff2a9"/><stop offset=".45" stop-color="#d4af37"/><stop offset="1" stop-color="#8c6a18"/></linearGradient>
+    <linearGradient id="silver" x1="28" y1="42" x2="135" y2="78" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".55" stop-color="#b9b7ae"/><stop offset="1" stop-color="#f7f1df"/></linearGradient>
+  </defs>
+  <g transform="translate(0 9) scale(.78)">
+    <path d="M80 8L132 33V74L80 111L28 74V33L80 8Z" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M16 68C39 50 57 43 84 43C107 43 125 51 148 68" stroke="url(#silver)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M30 72C52 63 72 59 96 61C113 62 130 67 144 75" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" opacity=".88"/>
+    <path d="M45 66C59 49 76 39 100 39C113 39 123 43 134 50" stroke="#050505" stroke-width="12" stroke-linecap="round" opacity=".72"/>
+    <path d="M48 67C62 52 78 47 99 47C112 47 123 50 136 57" stroke="url(#silver)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <path d="M145 18V103" stroke="#D4AF37" stroke-width="2" opacity=".7"/>
+  <text x="172" y="58" fill="#F5F3EE" font-family="Arial, Helvetica, sans-serif" font-size="42" letter-spacing="12" font-weight="700">AURAMOTO</text>
+  <path d="M174 78H262" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M505 78H594" stroke="#D4AF37" stroke-width="2"/>
+  <text x="290" y="85" fill="#D4AF37" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="12" font-weight="700">DETAILING STUDIO</text>
+  <text x="244" y="116" fill="#BDB8AA" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="13">CLEAN  |  PROTECT  |  PERFECT</text>
+</svg>

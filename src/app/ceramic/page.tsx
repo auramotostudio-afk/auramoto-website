@@ -1,0 +1,5 @@
+import { PageHero } from '@/components/ui/PageHero';
+import { HeroImagePanel } from '@/components/ui/HeroImagePanel';
+import { images } from '@/lib/site';
+const points=[['01','Hydrophobic finish','Water behaviour improves, making regular maintenance easier.'],['02','Gloss retention','A refined finish designed to preserve the freshly detailed look.'],['03','UV resistance','A protective layer that helps reduce environmental impact.'],['04','Surface protection','A sacrificial coating for everyday contamination and washing.']];
+export default function Page(){return <><PageHero kicker="Ceramic Protection" title="Deep gloss. Lower maintenance." copy="Ceramic coating adds a sacrificial protective layer that improves water behaviour, reduces surface contamination bonding and preserves the freshly corrected look." action={{href:'/pricing',label:'View Ceramic Pricing'}} bg={images.ceramic}/> <HeroImagePanel src={images.ceramic} alt="Ceramic coated vehicle"/><section className="section"><div className="container process-grid">{points.map(p=><div className="process-card" key={p[0]}><span>{p[0]}</span><h3>{p[1]}</h3><p>{p[2]}</p></div>)}</div></section></>}

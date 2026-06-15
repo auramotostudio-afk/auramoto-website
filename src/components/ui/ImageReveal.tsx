@@ -1,0 +1,3 @@
+'use client';
+import { useEffect, useRef, useState } from 'react';
+export function ImageReveal({src,alt,className='',children}:{src:string;alt:string;className?:string;children?:React.ReactNode}){ const ref=useRef<HTMLDivElement>(null); const [visible,setVisible]=useState(false); useEffect(()=>{const el=ref.current; if(!el)return; const io=new IntersectionObserver(([e])=>setVisible(e.isIntersecting),{threshold:.25}); io.observe(el); return()=>io.disconnect()},[]); return <div ref={ref} className={`${className} image-reveal ${visible?'is-visible':''}`}><img src={src} alt={alt}/>{children}</div> }

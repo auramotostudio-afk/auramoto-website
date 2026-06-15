@@ -1,0 +1,4 @@
+import { PageHero } from '@/components/ui/PageHero';
+import { HeroImagePanel } from '@/components/ui/HeroImagePanel';
+import { images, site } from '@/lib/site';
+export default function Page(){return <><PageHero kicker="Studio" title="Built for people who notice details." copy={`A focused automotive care space at ${site.address}. The experience is process-led, communication-first and owner-operated.`} action={{href:'/contact',label:'Contact Studio'}} bg={images.studio}/> <HeroImagePanel src={images.studio} alt="Automotive studio exterior"/><section className="section"><div className="container split"><h2 className="section-title">Precision. Reflection. Preservation.</h2><p className="section-copy">AuraMoto is designed for owners who care about how a vehicle feels after the service: clear paint, clean glass, restored interiors, dressed tyres and a finish that looks composed rather than overdone.</p></div></section></>}
