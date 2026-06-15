@@ -1,13 +1,13 @@
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { ImagePanel } from '@/components/ui/ImagePanel';
-import { imagery } from '@/lib/site';
+import { images } from '@/lib/site';
 import Link from 'next/link';
 
 const previews=[
-  ['/services','Craftsmanship','Wash, interiors, correction and protection — built as one refined process.',imagery.wash],
-  ['/ceramic','Protection','Hydrophobic gloss and lower-maintenance ownership.',imagery.ceramic],
-  ['/studio','Studio','A focused automotive care space near Pichhore Tiraha, Dabra.',imagery.studio]
+  ['/services','Craftsmanship','Wash, interiors, correction and protection — built as one refined process.',images.wash],
+  ['/ceramic','Protection','Hydrophobic gloss and lower-maintenance ownership.',images.ceramic],
+  ['/studio','Studio','A focused automotive care space near Pichhore Tiraha, Dabra.',images.studio]
 ];
 
 export function HomePage(){return <>
@@ -20,11 +20,13 @@ export function HomePage(){return <>
         <p className="bodycopy mt-8">A detail-led experience for paint clarity, interior restoration and ceramic protection — built for owners who notice every reflection.</p>
         <div className="mt-9 grid gap-3 sm:flex sm:gap-4">
           <Button href="/services">Explore Experience</Button>
-          <Button href="/contact" variant="gold">Enquire</Button>
+          <Button href="/contact" gold={true}>
+  Enquire
+</Button>
         </div>
       </div>
       <div className="order-1 lg:order-2">
-        <ImagePanel src={imagery.hero} label="Signature Finish" className="h-[46vh] min-h-[320px] rounded-sm sm:h-[58vh] lg:h-[72vh]"/>
+        <ImagePanel src={images.hero} label="Signature Finish" className="h-[46vh] min-h-[320px] rounded-sm sm:h-[58vh] lg:h-[72vh]"/>
       </div>
     </div>
   </Container>
